@@ -171,7 +171,7 @@ optional arguments:
 ----
 python3.6 main.py -i resource/demo.mp4 -m_fd mo_model/intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001.xml -m_hp mo_model/intel/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001.xml -m_lm mo_model/intel/facial-landmarks-35-adas-0002/FP32/facial-landmarks-35-adas-0002.xml -m_g mo_model/intel/gaze-estimation-adas-0002/FP32/gaze-estimation-adas-0002.xml -o_fd
 ----
-image::images/face_detection.gif[]
+
 
 ==== Head Pose Estimation
 [source,bash]
@@ -179,7 +179,6 @@ image::images/face_detection.gif[]
 python3.6 main.py -i resource/test_2.mp4 -m_fd mo_model/intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001.xml -m_hp mo_model/intel/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001.xml -m_lm mo_model/intel/facial-landmarks-35-adas-0002/FP32/facial-landmarks-35-adas-0002.xml -m_g mo_model/intel/gaze-estimation-adas-0002/FP32/gaze-estimation-adas-0002.xml -o_hp
 ----
 
-image::images/head_position.gif[]
 
 ==== Landmark regression
 [source,bash]
@@ -187,7 +186,7 @@ image::images/head_position.gif[]
 python3.6 main.py -i resource/test_2.mp4 -m_fd mo_model/intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001.xml -m_hp mo_model/intel/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001.xml -m_lm mo_model/intel/facial-landmarks-35-adas-0002/FP32/facial-landmarks-35-adas-0002.xml -m_g mo_model/intel/gaze-estimation-adas-0002/FP32/gaze-estimation-adas-0002.xml -o_lm
 ----
 
-image::images/land_mark.gif[]
+
 
 
 ==== Gaze Estimation
@@ -196,7 +195,6 @@ image::images/land_mark.gif[]
 python3.6 main.py -i resource/test_2.mp4 -m_fd mo_model/intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001.xml -m_hp mo_model/intel/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001.xml -m_lm mo_model/intel/facial-landmarks-35-adas-0002/FP32/facial-landmarks-35-adas-0002.xml -m_g mo_model/intel/gaze-estimation-adas-0002/FP32/gaze-estimation-adas-0002.xml -o_gm
 ----
 
-image::images/gaze.gif[]
 
 ====
 
@@ -206,7 +204,6 @@ image::images/gaze.gif[]
 python3.6 main.py -i resource/test_2.mp4 -m_fd mo_model/intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001.xml -m_hp mo_model/intel/head-pose-estimation-adas-0001/FP32/head-pose-estimation-adas-0001.xml -m_lm mo_model/intel/facial-landmarks-35-adas-0002/FP32/facial-landmarks-35-adas-0002.xml -m_g mo_model/intel/gaze-estimation-adas-0002/FP32/gaze-estimation-adas-0002.xml -o_mc
 ----
 
-image::images/mouse_counter.gif[]
 
 [quote]
 sluggishness can be removed by removing if frame_count % 10 == 0: this counter. 
